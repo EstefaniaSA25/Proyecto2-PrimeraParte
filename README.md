@@ -34,8 +34,8 @@ Permite redimensionar, mejorar contraste, aplicar filtros, crear bocetos y manej
                 │   Mostrar menú principal     │
                 └─────────┬────────────────────┘
                           │
-          ┌───────────────┼───────────────┬───────────────┬───────────────┬───────────────┐
-          ▼               ▼               ▼               ▼               ▼               ▼
+          ┌───────────────┼───────────────┬───────────────┬───────────────┬───────────────┬──────────────┐
+          ▼               ▼               ▼               ▼               ▼               ▼              ▼
    ┌────────────┐  ┌───────────────┐  ┌────────────────┐  ┌───────────────┐   ┌────────────────┐   ┌───────────────┐
    │  Opción 1  │  │   Opción 2    │  │    Opción 3    │  │    Opción 4   │   │    Opción 5    │   │   Opción 6    │
    │Redimension │  │Ajustar cont.  │  │Aplicar filtro  │  │  Crear boceto │   │ Cambiar imagen │   │     Salir     │
