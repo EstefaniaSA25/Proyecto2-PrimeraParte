@@ -34,41 +34,24 @@ Permite redimensionar, mejorar contraste, aplicar filtros, crear bocetos y manej
                 │   Mostrar menú principal     │
                 └─────────┬────────────────────┘
                           │
-          ┌───────────────┼──────────────────────────────┐
-          ▼               ▼                              ▼
-   ┌───────────┐   ┌───────────────┐            ┌────────────────┐
-   │ Opción 1   │   │  Opción 2     │            │   Opción 3      │
-   │Redimension │   │Ajustar cont.  │            │Aplicar filtro   │
-   └─────┬──────┘   └──────┬────────┘            └──────┬─────────┘
-         │                 │                            │
-         ▼                 ▼                            ▼
-   Ejecutar función   Ejecutar función           Ejecutar función
-   redimensionar()    ajustar_contraste()        aplicar_filtro()
-         │                 │                            │
-         └─────────────┬───┴──────────────┬────────────┘
-                       │                  │
-                       ▼                  ▼
-            ┌─────────────────┐   ┌────────────────────┐
-            │   Opción 4      │   │     Opción 5        │
-            │Crear boceto     │   │Cambiar imagen carg. │
-            └──────┬──────────┘   └──────────┬─────────┘
-                   │                         │
-                   ▼                         ▼
-          Ejecutar función            Pedir nueva ruta
-          crear_boceto()             actualizar variable
-                   │                         │
-                   └───────────────┬─────────┘
-                                   │
-                                   ▼
-                          ┌─────────────────┐
-                          │    Opción 6     │
-                          │     Salir       │
-                          └────────┬────────┘
-                                   │
-                                   ▼
-                          ┌─────────────────┐
-                          │   Fin del menú  │
-                          └─────────────────┘
+          ┌───────────────┼───────────────┬───────────────┬───────────────┬───────────────┐
+          ▼               ▼               ▼               ▼               ▼               ▼
+   ┌────────────┐  ┌───────────────┐  ┌────────────────┐  ┌───────────────┐   ┌────────────────┐   ┌───────────────┐
+   │  Opción 1  │  │   Opción 2    │  │    Opción 3    │  │    Opción 4   │   │    Opción 5    │   │   Opción 6    │
+   │Redimension │  │Ajustar cont.  │  │Aplicar filtro  │  │  Crear boceto │   │ Cambiar imagen │   │     Salir     │
+   └─────┬──────┘  └──────┬────────┘  └──────┬─────────┘  └──────┬────────┘   └──────┬─────────┘   └──────┬────────┘
+         │                │                  │                   │                   │                    │
+         ▼                ▼                  ▼                   ▼                   ▼                    ▼
+ Ejecutar función   Ejecutar función   Ejecutar función   Ejecutar función     Pedir nueva ruta       Finalizar app
+ redimensionar()    ajustar_contraste() aplicar_filtro()  crear_boceto()       y actualizar var.         
+         │                 │                 │                  │                 │                  
+         └─────────────────┴─────────────────┴──────────────────┴─────────────────┴
+                                             │
+                                             ▼
+                                   ┌────────────────────┐
+                                   │   Retornar al menú │
+                                   └────────────────────┘
+
 ```
 
 ## Archivos del proyecto
