@@ -19,8 +19,57 @@ Permite redimensionar, mejorar contraste, aplicar filtros, crear bocetos y manej
 5. Menú interactivo con manejo de errores
 
 ## Diagrama de flujo del menú principal
-
-
+```
+                   ┌────────────────────┐
+                   │   Inicio FotoApp   │
+                   └─────────┬──────────┘
+                             │
+                             ▼
+                ┌──────────────────────────────┐
+                │ Pedir URL o ruta de imagen   │
+                └─────────┬────────────────────┘
+                          │
+                          ▼
+                ┌──────────────────────────────┐
+                │   Mostrar menú principal     │
+                └─────────┬────────────────────┘
+                          │
+          ┌───────────────┼──────────────────────────────┐
+          ▼               ▼                              ▼
+   ┌───────────┐   ┌───────────────┐            ┌────────────────┐
+   │ Opción 1   │   │  Opción 2     │            │   Opción 3      │
+   │Redimension │   │Ajustar cont.  │            │Aplicar filtro   │
+   └─────┬──────┘   └──────┬────────┘            └──────┬─────────┘
+         │                 │                            │
+         ▼                 ▼                            ▼
+   Ejecutar función   Ejecutar función           Ejecutar función
+   redimensionar()    ajustar_contraste()        aplicar_filtro()
+         │                 │                            │
+         └─────────────┬───┴──────────────┬────────────┘
+                       │                  │
+                       ▼                  ▼
+            ┌─────────────────┐   ┌────────────────────┐
+            │   Opción 4      │   │     Opción 5        │
+            │Crear boceto     │   │Cambiar imagen carg. │
+            └──────┬──────────┘   └──────────┬─────────┘
+                   │                         │
+                   ▼                         ▼
+          Ejecutar función            Pedir nueva ruta
+          crear_boceto()             actualizar variable
+                   │                         │
+                   └───────────────┬─────────┘
+                                   │
+                                   ▼
+                          ┌─────────────────┐
+                          │    Opción 6     │
+                          │     Salir       │
+                          └────────┬────────┘
+                                   │
+                                   ▼
+                          ┌─────────────────┐
+                          │   Fin del menú  │
+                          └─────────────────┘
+```
 
 ## Archivos del proyecto
 - `fotoapp.py` → módulo con todas las funciones  
