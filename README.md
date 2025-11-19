@@ -60,7 +60,7 @@ Permite redimensionar, mejorar contraste, aplicar filtros, crear bocetos y manej
 - Carpeta `/imagenes` → imágenes de prueba y generadas  
 
 ### Librerías utilizadas
-`pillow`, `matplotlib`, `opencv-python`, `numpy`, `requests`
+`pillow`, `matplotlib`, `opencv-python`, `numpy`, `requests`, `skimage`
 
 ## Ejecución
 1. Importar el módulo:
